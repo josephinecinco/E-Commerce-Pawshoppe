@@ -1,0 +1,73 @@
+.DogSection {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* fixed typo */
+  min-height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #e78d17;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.DogHomePage-DogPhoto {
+  width: 40%; /* adjust size */
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.Dog-content {
+  width: 55%;
+  color: #333;
+  padding: 0 20px;
+}
+
+.Dog-content h1 {
+  font-size: 2rem;
+  color: #ff914d;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.Dog-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .DogSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .DogHomePage-DogPhoto,
+  .Dog-content {
+    width: 80%;
+  }
+
+  .Dog-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .Dog-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Dog-content h1 {
+    font-size: 1.3rem;
+  }
+
+  .Dog-content p {
+    font-size: 0.9rem;
+  }
+}
