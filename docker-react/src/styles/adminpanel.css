@@ -1,0 +1,112 @@
+/* General container */
+.admin-panel {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Heading */
+.admin-panel h1 {
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+/* Form styling */
+.admin-panel form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.admin-panel form input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 150px;
+}
+
+.admin-panel form button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.admin-panel form button:hover {
+  background-color: #0056b3;
+}
+
+.admin-panel form button[type="button"] {
+  background-color: #6c757d;
+}
+
+.admin-panel form button[type="button"]:hover {
+  background-color: #495057;
+}
+
+/* Table styling */
+.admin-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.admin-panel table th,
+.admin-panel table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.admin-panel table th {
+  background-color: #ffae00;
+  color: #fff;
+}
+
+/* Table images - larger size */
+.admin-panel table td img {
+  width: 80px; /* bigger image */
+  height: 80px; /* maintain square */
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Action buttons */
+.admin-panel table td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.admin-panel table td button:hover {
+  opacity: 0.8;
+}
+
+.admin-panel table td button:first-child {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.admin-panel table td button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* No products row */
+.admin-panel table td[colspan="6"] {
+  text-align: center;
+  padding: 15px;
+  font-style: italic;
+  color: #666;
+}
