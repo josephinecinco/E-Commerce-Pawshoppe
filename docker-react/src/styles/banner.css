@@ -1,0 +1,101 @@
+/* Import handwritten font */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* =========================
+   BANNER BASE STYLE
+   ========================= */
+.banner {
+  height: 700px;
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  aspect-ratio: 3 / 1; /* Keeps proportion without locking height */
+  background-image: url('../assets/Banner.png');
+  background-size: cover;
+  background-position: top; /* Show top part of banner image */
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertically center */
+  align-items: center;       /* horizontally center */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Gloria Hallelujah', cursive;
+  box-sizing: border-box;
+}
+
+/* Banner heading */
+.banner h1 {
+  font-size: 4rem;
+  margin-top: 100px;
+  color: #fff;
+}
+
+/* Optional subtitle */
+.banner p {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  max-width: 700px;
+  margin-bottom: 200px;
+}
+
+/* =========================
+   RESPONSIVE QUERIES
+   ========================= */
+
+
+/* Tablets */
+@media (max-width: 768px) {
+  .banner {
+    aspect-ratio: 2.5 / 1;
+
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 0.7rem;
+    max-width: 90%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .banner {
+    aspect-ratio: 2 / 1;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tiny phones */
+@media (max-width: 320px) {
+  .banner {
+    aspect-ratio: 1.8 / 1;
+    height: 200px;
+    padding: 5px;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+    padding-top: 50px;
+  }
+
+  .banner p {
+    font-size: 0.4rem;
+  }
+}
